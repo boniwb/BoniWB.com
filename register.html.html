@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="mystyle/form.css">
+<title>user register</title>
+</head>
+<body>
+<p align="center">  <img src="images/bridge.jpg" width="800px" /></p>
+
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="800" border="1" align="center" cellpadding="3px" cellspacing="0px" bordercolorlight="#000000" bordercolordark="#990000">
+    <tr>
+      <td colspan="2" class="menu">user Register</td>
+    </tr>
+    <tr>
+      <td width="150"><p class="tdleft">user name:</p>
+      </td>
+      <td width="690" class="tdright"><label>
+        <input type="text" name="userName" placeholder="please input the userName" onclick="this.value=''"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td class="tdleft">Pass word:</td>
+      <td class="tdright"><label>
+        <input type="password" name="pwd"    placeholder="input the password" onclick="this.value=''"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td class="tdleft">Sex:</td>
+      <td class="tdright"><label>
+        <input type="radio" name="sex" value="male" />
+       male  
+       <input name="sex" type="radio" value="female" checked="checked" />
+      female</label></td>
+    </tr>
+    <tr>
+      <td class="tdleft">Birthday:</td>
+      <td class="tdright"><label>
+        <select name="year">          
+		  <option selected="selected" value="1990">1990</option>
+          <option value="1991">1991</option>
+          <option value="1992">1992</option>
+          <option value="1993">1993</option>                        
+        </select>
+       year  
+       <select name="month">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>         
+        </select>
+       month
+        <select name="day">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>                
+        </select>
+        day
+      </label></td>
+    </tr>
+    <tr>
+      <td class="tdleft">hobby:</td>
+      <td class="tdright"><p>
+        <label>
+        <input type="checkbox" name="music" value="checkbox" />
+        </label>
+        music 
+        <label>
+        <input type="checkbox" name="internet" value="checkbox" />
+        </label>
+        Internet 
+        <label>
+        <input type="checkbox" name="basketball" value="checkbox" />
+        </label>
+        bascketball</p></td>
+    </tr>
+    <tr>
+      <td class="tdleft">introduction:</td>
+      <td class="tdright"><label>
+        <textarea name="introduction" cols="80" rows="15"></textarea>
+      </label></td>
+    </tr>     
+    <tr>
+      <td colspan="2" align="center"><label>
+        <input type="submit" name="Submit" value="register" />　　
+      </label>
+        <label>
+        <input type="reset" name="Submit2" value="reset" />
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
